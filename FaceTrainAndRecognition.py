@@ -51,7 +51,7 @@ def prepare_training_data(data_folder_path):
             print(face)
             draw_rectangle(image, rect)
             cv2.imshow("Training on image...", cv2.resize(image, (400, 500)))
-            cv2.waitKey(50)
+            cv2.waitKey(500)
             #------STEP-4--------
             #for the purpose of this tutorial
             #we will ignore faces that are not detected
@@ -145,8 +145,3 @@ for test in list_test:
 # cv2.imshow("SecondImage", cv2.resize(predicted_img2, (400, 500)))
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
-
-
-
-
-
